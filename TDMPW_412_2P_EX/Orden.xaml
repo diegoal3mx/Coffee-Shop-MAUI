@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_412_2P_EX.Orden"
+             xmlns:local="clr-namespace:TDMPW_412_2P_EX"
+             Title="Orden">
+    <VerticalStackLayout HorizontalOptions="Center">
+
+        <HorizontalStackLayout Spacing="15" Margin="-60,0,0,0">
+            <Border WidthRequest="60" HeightRequest="60" >
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+
+                <Image Source="bebidacaliente.jpg" Aspect="Fill"></Image>
+            </Border>
+            <Label Text="Bebidas Calientes" VerticalOptions="Center"></Label>
+        </HorizontalStackLayout>
+
+
+        <VerticalStackLayout Spacing="15" Margin="-60,50,0,0">
+
+            <Label Text="También te pueden gustar" Margin="0,0,0,0" FontSize="7"></Label>
+            
+            <HorizontalStackLayout Spacing="25" Margin="0,0,0,0">
+                <VerticalStackLayout>
+                    <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
+                    </Image>
+                    <Label Text="Cheesecake Roulet" WidthRequest="60" FontSize="8" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
+                        </Image>
+                    <Label Text="Cheesecake Roulet" WidthRequest="60"  FontSize="8"/>
+                    </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
+                    </Image>
+                    <Label Text="Cheesecake Roulet" WidthRequest="60" FontSize="8"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+            <Label Margin="0,50,0,0"  Text="Total____________________$0.00"/>
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

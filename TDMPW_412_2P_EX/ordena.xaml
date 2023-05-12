@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_412_2P_EX.ordena"
+               xmlns:local="clr-namespace:TDMPW_412_2P_EX"
+             Title="ordena">
+    <VerticalStackLayout HorizontalOptions="Center">
+        <VerticalStackLayout Spacing="25">
+            <Label 
+            Text="Ordena" FontSize="30"
+           />
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Menú"></Label>
+        <BoxView Color="DarkGreen"
+                             HeightRequest="5"
+                             WidthRequest="60" Margin="-150,0,0,0"></BoxView>
+        <Label Text="Bebidas"></Label>
+        </VerticalStackLayout>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="15">
+
+            <HorizontalStackLayout Spacing="15">
+                <Border WidthRequest="60" HeightRequest="60" >
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30" />
+                    </Border.StrokeShape>
+
+                    <Image Source="bebidacaliente.jpg" Aspect="Fill"></Image>
+                </Border>
+                <Label Text="Bebidas Calientes" VerticalOptions="Center"></Label>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout Spacing="15">
+                <Border WidthRequest="60" HeightRequest="60" >
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30" />
+                    </Border.StrokeShape>
+
+                    <Image Source="bebidafria.jpg" Aspect="Fill" ></Image>
+                </Border>
+                <Label Text="Bebidas Frías"  VerticalOptions="Center"></Label>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="15">
+                <Border WidthRequest="60" HeightRequest="60" >
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30" />
+                    </Border.StrokeShape>
+
+                    <Image Source="bebidate.jpeg" Aspect="Fill"></Image>
+                </Border>
+                <Label Text="Bebidas Base Té"  VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="15">
+                <Border WidthRequest="60" HeightRequest="60" >
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30" />
+                    </Border.StrokeShape>
+
+                    <Image Source="frappuccino.jpg" Aspect="Fill"></Image>
+                </Border>
+                <Label Text="Frappuccinos"  VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+           
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_412_2P_EX.inicio"
+             xmlns:local="clr-namespace:TDMPW_412_2P_EX"
+             Title="inicio">
+
+    <local:home Title="Inicio" IconImageSource="hobbies.png"></local:home>
+    <local:ordena Title="Ordena" IconImageSource="hobbylogo.png" ></local:ordena>
+    <local:Orden Title="Orden" IconImageSource="hobbylogo.png" ></local:Orden>
+
+</TabbedPage>
