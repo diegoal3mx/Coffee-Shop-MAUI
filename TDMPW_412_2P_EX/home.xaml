@@ -4,7 +4,17 @@
              x:Class="TDMPW_412_2P_EX.home"
                xmlns:local="clr-namespace:TDMPW_412_2P_EX"
              Title="home">
-    <VerticalStackLayout>
-       
+    <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+       <Label Text="Bienvenido (a)"/>
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="Ingresar"></Label>
+            <Label Text="Inbox"/>
+        </HorizontalStackLayout>
+        <VerticalStackLayout Spacing="5">
+            <Label Text="Coffee Rewards"/>
+            <Image Source="srewards.jpg" WidthRequest="300" HeightRequest="150"/>
+            <Label Text="Obtén bebidas gratis, alimentos y más"/>
+            <Image Source="starbucksdonut.jpg" WidthRequest="300" HeightRequest="150" Scale="1.45"/>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

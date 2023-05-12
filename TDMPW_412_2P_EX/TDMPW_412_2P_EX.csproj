@@ -54,6 +54,9 @@
 	  <None Remove="Resources\Images\bebidate.jpeg" />
 	  <None Remove="Resources\Images\cheesecake.jpg" />
 	  <None Remove="Resources\Images\frappuccino.jpg" />
+	  <None Remove="Resources\Images\macchiato.jpg" />
+	  <None Remove="Resources\Images\srewards.jpg" />
+	  <None Remove="Resources\Images\starbucksdonut.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

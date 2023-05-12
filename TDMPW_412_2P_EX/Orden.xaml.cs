@@ -7,9 +7,9 @@ public partial class Orden : ContentPage
     public producto anteriorProductoSeleccionado;
     public static producto chocolate = new producto
     {
-        precio = 120.00,
-        calorias = 123,
-        tamaño = "mediano",
+        precio = 102.15,
+        calorias = 193,
+        tamaño = "Mediano",
         imagen="bebidacaliente.jpg",
         tipo="Chocolate",
         nombre="Chocolate caliente"
@@ -26,7 +26,28 @@ public partial class Orden : ContentPage
         nombre= "Cheesecake Roulet"
     };
 
-   public producto[] productos = { chocolate, cheesecake};
+    public static producto macchiato = new producto
+    {
+        precio = 88.85,
+        calorias = 250,
+        tamaño = "Grande",
+        imagen = "macchiato.jpg",
+        tipo = "Macchiato",
+        nombre = "Caramel Macchiato"
+    };
+
+    public static producto croissant = new producto
+    {
+        precio = 54.00,
+        calorias = 250,
+        tamaño = "Mediano",
+        imagen = "croissant.jpg",
+        tipo = "Croissant",
+        nombre = "Croissant Francés"
+    };
+
+
+    public producto[] productos = { chocolate, cheesecake, macchiato, croissant};
 
     public Orden()
 	{
@@ -48,8 +69,22 @@ public partial class Orden : ContentPage
         Producto1.Tipo = anteriorProductoSeleccionado.tipo;
         lblNombreProducto1.Text = anteriorProductoSeleccionado.nombre;
         imgProducto1.Source = anteriorProductoSeleccionado.imagen;
-       
-        
+    }
+    private void Producto2_Tapped(object sender, EventArgs e)
+    {
+        getSelectedProduct();
+        swapProducts(Producto2.Tipo);
+        Producto2.Tipo = anteriorProductoSeleccionado.tipo;
+        lblNombreProducto2.Text = anteriorProductoSeleccionado.nombre;
+        imgProducto2.Source = anteriorProductoSeleccionado.imagen;
+    }
+    private void Producto3_Tapped(object sender, EventArgs e)
+    {
+        getSelectedProduct();
+        swapProducts(Producto3.Tipo);
+        Producto3.Tipo = anteriorProductoSeleccionado.tipo;
+        lblNombreProducto3.Text = anteriorProductoSeleccionado.nombre;
+        imgProducto3.Source = anteriorProductoSeleccionado.imagen;
     }
 
 
@@ -67,7 +102,7 @@ public partial class Orden : ContentPage
         lblNombreProductoSeleccionado.Text=nuevoProductoSeleccionado.nombre;
         lblCaloríasProductoSeleccionado.Text = $"{nuevoProductoSeleccionado.calorias} calorías";
         lblTamañoProductoSeleccionado.Text = nuevoProductoSeleccionado.tamaño;
-        imgProductoSeleccionado.Source = nuevoProductoSeleccionado.imagen;
+        imgProductoSeleccionado.Source = nuevoProductoSeleccionado.imagen; 
         stpCantidad.Value = 1;
         lblPrecio.Text = $"1 x ${nuevoProductoSeleccionado.precio:F2}";
         lblTotal.Text = $"Total____________________${nuevoProductoSeleccionado.precio:F2}";
@@ -88,10 +123,10 @@ public partial class Orden : ContentPage
                 { productoSeleccionado = cheesecake; }
                 break;
             case "Macchiato":
-                { }
+                { productoSeleccionado = macchiato; }
                 break;
             case "Croissant":
-                { }
+                { productoSeleccionado = croissant; }
                 break;
             default:
                 break;

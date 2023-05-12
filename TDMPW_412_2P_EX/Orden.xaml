@@ -44,28 +44,39 @@
                     </Border>
                     <Label x:Name="lblNombreProducto1" Text="Cheesecake Roulet" WidthRequest="60" FontSize="8" HorizontalTextAlignment="Center"/>
                     </local:CustomVS>
-                
-                    <VerticalStackLayout>
+
+
+
+                <local:CustomVS x:Name="Producto2" Tipo="Macchiato">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Producto2_Tapped"/>
+                    </VerticalStackLayout.GestureRecognizers>
                     <Border WidthRequest="60" HeightRequest="60" >
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="30" />
                         </Border.StrokeShape>
-                        <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
+                        <Image x:Name="imgProducto2" Source="macchiato.jpg" Aspect="Fill">
                         </Image>
                     </Border>
-                    <Label Text="Cheesecake Roulet" WidthRequest="60"  FontSize="8" HorizontalTextAlignment="Center"/>
-                    </VerticalStackLayout>
-                
-                <VerticalStackLayout>
+                    <Label x:Name="lblNombreProducto2" Text="Caramel Macchiato" WidthRequest="60"  FontSize="8" HorizontalTextAlignment="Center"/>
+                    </local:CustomVS>
+
+
+
+
+                <local:CustomVS x:Name="Producto3" Tipo="Croissant">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Producto3_Tapped"/>
+                    </VerticalStackLayout.GestureRecognizers>
                     <Border WidthRequest="60" HeightRequest="60" >
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="30" />
                         </Border.StrokeShape>
-                        <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
+                        <Image x:Name="imgProducto3" Source="croissant.jpg"  Aspect="Fill">
                     </Image>
                     </Border>
-                    <Label Text="Cheesecake Roulet" WidthRequest="60" FontSize="8" HorizontalTextAlignment="Center"/>
-                </VerticalStackLayout>
+                    <Label x:Name="lblNombreProducto3" Text="Croissant Francés" WidthRequest="60" FontSize="8" HorizontalTextAlignment="Center"/>
+                </local:CustomVS>
                 
             </HorizontalStackLayout>
 
