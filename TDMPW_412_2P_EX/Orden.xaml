@@ -6,40 +6,44 @@
              Title="Orden">
     <VerticalStackLayout HorizontalOptions="Center">
 
-        <HorizontalStackLayout Spacing="15" Margin="-60,0,0,0">
-            <Border WidthRequest="60" HeightRequest="60" >
+      
+        <local:CustomHS Tipo="Chocolate" Spacing="15" Margin="-20,0,0,0" x:Name="ProductoSeleccionado">
+        <Border WidthRequest="60" HeightRequest="60" VerticalOptions="Start" >
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="30" />
                 </Border.StrokeShape>
 
-                <Image Source="bebidacaliente.jpg" Aspect="Fill"></Image>
+                <Image x:Name="imgProductoSeleccionado" Source="bebidacaliente.jpg" Aspect="Fill"></Image>
             </Border>
             <VerticalStackLayout Spacing="5">
-                <Label Text="Chocolate caliente"></Label>
-                <Label Text="Mediano"></Label>
-                <Label Text="23 calorías"></Label>
-                <Stepper Margin="20" BackgroundColor="#F25767" x:Name="stpCantidad" HorizontalOptions="Center" Minimum="1" Increment="1" ValueChanged="stpCantidad_ValueChanged"></Stepper>
+                <Label x:Name="lblNombreProductoSeleccionado" Text="Chocolate caliente" WidthRequest="70" FontSize="12" FontAttributes="Bold"></Label>
+                <Label x:Name="lblTamañoProductoSeleccionado" Text="Mediano" FontSize="8" WidthRequest="70"></Label>
+                <Label x:Name="lblCaloríasProductoSeleccionado" Text="23 calorías" FontSize="8" WidthRequest="70"></Label>
+                <Stepper x:Name="stpCantidad" Margin="-40,0,0,0" HorizontalOptions="Center" Minimum="1" Increment="1" ValueChanged="stpCantidad_ValueChanged" Scale="0.5"></Stepper>
+               
             </VerticalStackLayout>
-            <Label x:name="lblPrecio" Text="2 x $38.00"></Label>
-        </HorizontalStackLayout>
+        <Label x:Name="lblPrecio" Margin="45,0,0,0" Text="1 x $120.00"></Label>
 
-
-        <VerticalStackLayout Spacing="15" Margin="-60,50,0,0">
+        </local:CustomHS>
+        <VerticalStackLayout Spacing="15" Margin="-30,20,0,0">
 
             <Label Text="También te pueden gustar" Margin="0,0,0,0" FontSize="7"></Label>
             
             <HorizontalStackLayout Spacing="25" Margin="0,0,0,0">
                 
-                <VerticalStackLayout>
+                <local:CustomVS x:Name="Producto1" Tipo="Cheesecake">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Producto1_Tapped"/>
+                    </VerticalStackLayout.GestureRecognizers>
                     <Border WidthRequest="60" HeightRequest="60" >
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="30" />
                         </Border.StrokeShape>
-                        <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
+                        <Image x:Name="imgProducto1" Source="cheesecake.jpg" Aspect="Fill">
                     </Image>
                     </Border>
-                    <Label Text="Cheesecake Roulet" WidthRequest="60" FontSize="8" HorizontalTextAlignment="Center"/>
-                    </VerticalStackLayout>
+                    <Label x:Name="lblNombreProducto1" Text="Cheesecake Roulet" WidthRequest="60" FontSize="8" HorizontalTextAlignment="Center"/>
+                    </local:CustomVS>
                 
                     <VerticalStackLayout>
                     <Border WidthRequest="60" HeightRequest="60" >
@@ -65,7 +69,7 @@
                 
             </HorizontalStackLayout>
 
-            <Label Text="Total____________________$0.00"/>
+            <Label x:Name="lblTotal" Margin="0,30,0,0" Text="Total____________________$120.00"/>
 
         </VerticalStackLayout>
     </VerticalStackLayout>
