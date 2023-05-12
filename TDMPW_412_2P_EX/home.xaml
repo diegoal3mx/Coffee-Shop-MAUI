@@ -5,16 +5,18 @@
                xmlns:local="clr-namespace:TDMPW_412_2P_EX"
              Title="home">
     <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
-       <Label Text="Bienvenido (a)"/>
-        <HorizontalStackLayout Spacing="10">
+        <Label Text="Bienvenido (a)" FontAttributes="Bold" FontSize="25" Margin="20,0,0,0"/>
+        <HorizontalStackLayout Spacing="10" Margin="20,10,0,0">
             <Label Text="Ingresar"></Label>
             <Label Text="Inbox"/>
         </HorizontalStackLayout>
-        <VerticalStackLayout Spacing="5">
-            <Label Text="Coffee Rewards"/>
-            <Image Source="srewards.jpg" WidthRequest="300" HeightRequest="150"/>
+        <Frame BackgroundColor="#f7f7f7" WidthRequest="350">
+        <VerticalStackLayout Spacing="25">
+                <Label Text="COFFEE REWARDS" FontSize="7" TextColor="#7a7a7a" FontAttributes="Bold"/>
+            <Image Source="srewards.jpg" WidthRequest="320" HeightRequest="150"/>
             <Label Text="Obtén bebidas gratis, alimentos y más"/>
-            <Image Source="starbucksdonut.jpg" WidthRequest="300" HeightRequest="150" Scale="1.45"/>
+            <Image Source="starbucksdonut.jpg" WidthRequest="300" HeightRequest="150" Scale="1.45" Margin="0,20,0,0"/>
         </VerticalStackLayout>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>
