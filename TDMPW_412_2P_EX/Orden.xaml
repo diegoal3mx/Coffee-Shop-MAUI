@@ -14,7 +14,13 @@
 
                 <Image Source="bebidacaliente.jpg" Aspect="Fill"></Image>
             </Border>
-            <Label Text="Bebidas Calientes" VerticalOptions="Center"></Label>
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Chocolate caliente"></Label>
+                <Label Text="Mediano"></Label>
+                <Label Text="23 calorías"></Label>
+                <Stepper Margin="20" BackgroundColor="#F25767" x:Name="stpCantidad" HorizontalOptions="Center" Minimum="1" Increment="1" ValueChanged="stpCantidad_ValueChanged"></Stepper>
+            </VerticalStackLayout>
+            <Label x:name="lblPrecio" Text="2 x $38.00"></Label>
         </HorizontalStackLayout>
 
 
@@ -23,24 +29,43 @@
             <Label Text="También te pueden gustar" Margin="0,0,0,0" FontSize="7"></Label>
             
             <HorizontalStackLayout Spacing="25" Margin="0,0,0,0">
+                
                 <VerticalStackLayout>
-                    <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
+                    <Border WidthRequest="60" HeightRequest="60" >
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30" />
+                        </Border.StrokeShape>
+                        <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
                     </Image>
+                    </Border>
                     <Label Text="Cheesecake Roulet" WidthRequest="60" FontSize="8" HorizontalTextAlignment="Center"/>
                     </VerticalStackLayout>
+                
                     <VerticalStackLayout>
+                    <Border WidthRequest="60" HeightRequest="60" >
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30" />
+                        </Border.StrokeShape>
                         <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
                         </Image>
-                    <Label Text="Cheesecake Roulet" WidthRequest="60"  FontSize="8"/>
+                    </Border>
+                    <Label Text="Cheesecake Roulet" WidthRequest="60"  FontSize="8" HorizontalTextAlignment="Center"/>
                     </VerticalStackLayout>
+                
                 <VerticalStackLayout>
-                    <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
+                    <Border WidthRequest="60" HeightRequest="60" >
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30" />
+                        </Border.StrokeShape>
+                        <Image Source="cheesecake.jpg" HeightRequest="60" WidthRequest="60">
                     </Image>
-                    <Label Text="Cheesecake Roulet" WidthRequest="60" FontSize="8"/>
+                    </Border>
+                    <Label Text="Cheesecake Roulet" WidthRequest="60" FontSize="8" HorizontalTextAlignment="Center"/>
                 </VerticalStackLayout>
+                
             </HorizontalStackLayout>
 
-            <Label Margin="0,50,0,0"  Text="Total____________________$0.00"/>
+            <Label Text="Total____________________$0.00"/>
 
         </VerticalStackLayout>
     </VerticalStackLayout>
