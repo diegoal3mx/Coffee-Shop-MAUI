@@ -65,7 +65,6 @@ public partial class Orden : ContentPage
     }
     private void Producto1_Tapped(object sender, EventArgs e)
     {
-        getSelectedProduct();
         swapProducts(Producto1.Tipo);
         Producto1.Tipo = anteriorProductoSeleccionado.tipo;
         lblNombreProducto1.Text = anteriorProductoSeleccionado.nombre;
@@ -73,7 +72,6 @@ public partial class Orden : ContentPage
     }
     private void Producto2_Tapped(object sender, EventArgs e)
     {
-        getSelectedProduct();
         swapProducts(Producto2.Tipo);
         Producto2.Tipo = anteriorProductoSeleccionado.tipo;
         lblNombreProducto2.Text = anteriorProductoSeleccionado.nombre;
@@ -81,7 +79,6 @@ public partial class Orden : ContentPage
     }
     private void Producto3_Tapped(object sender, EventArgs e)
     {
-        getSelectedProduct();
         swapProducts(Producto3.Tipo);
         Producto3.Tipo = anteriorProductoSeleccionado.tipo;
         lblNombreProducto3.Text = anteriorProductoSeleccionado.nombre;
