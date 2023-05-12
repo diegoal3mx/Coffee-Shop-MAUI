@@ -49,14 +49,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\bebidacaliente.jpg" />
-	  <None Remove="Resources\Images\bebidafria.jpg" />
-	  <None Remove="Resources\Images\bebidate.jpeg" />
-	  <None Remove="Resources\Images\cheesecake.jpg" />
-	  <None Remove="Resources\Images\frappuccino.jpg" />
+	  <None Remove="Resources\Fonts\cafe.png" />
+	  <None Remove="Resources\Fonts\fontello.ttf" />
+	  <None Remove="Resources\Fonts\OxfordStreet.ttf" />
+	  <None Remove="Resources\Fonts\Santana.ttf" />
+	  <None Remove="Resources\Images\basete.jpg" />
+	  <None Remove="Resources\Images\cheesecakeroulet.png" />
+	  <None Remove="Resources\Images\deg.png" />
+	  <None Remove="Resources\Images\frapu.png" />
 	  <None Remove="Resources\Images\macchiato.jpg" />
+	  <None Remove="Resources\Images\mangodragon.jpg" />
+	  <None Remove="Resources\Images\mocha.png" />
 	  <None Remove="Resources\Images\srewards.jpg" />
 	  <None Remove="Resources\Images\starbucksdonut.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiFont Include="Resources\Images\cafe.png" />
 	</ItemGroup>
 
 	<ItemGroup>

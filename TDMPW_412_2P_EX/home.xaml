@@ -5,10 +5,43 @@
                xmlns:local="clr-namespace:TDMPW_412_2P_EX"
              Title="home">
     <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
-        <Label Text="Bienvenido (a)" FontAttributes="Bold" FontSize="25" Margin="20,0,0,0"/>
+        <HorizontalStackLayout Spacing="10">
+        <Label Text="Bienvenido (a)" FontAttributes="Bold" FontSize="25" Margin="20,0,0,0" FontFamily="Starbucks"/>
+            <Image WidthRequest="27" Source="cafe.png" VerticalOptions="Center" Margin="0,-5,0,0"/>
+        </HorizontalStackLayout>
         <HorizontalStackLayout Spacing="10" Margin="20,10,0,0">
+            <Image WidthRequest="20">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="Icons"
+                        Size="100"
+                        Glyph="&#xF2C0;" 
+                        Color="#bbbbbb">
+                    </FontImageSource>
+                </Image.Source>
+            </Image>
             <Label Text="Ingresar"></Label>
+            <Image WidthRequest="20">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="Icons"
+                        Size="100"
+                        Glyph="&#xE802;" 
+                        Color="#bbbbbb">
+                    </FontImageSource>
+                </Image.Source>
+            </Image>
             <Label Text="Inbox"/>
+            <Image WidthRequest="20">
+                <Image.Source>
+                    <FontImageSource 
+                        FontFamily="Icons"
+                        Size="100"
+                        Glyph="&#xE803;" 
+                        Color="#bbbbbb">
+                    </FontImageSource>
+                </Image.Source>
+            </Image>
         </HorizontalStackLayout>
         <Frame BackgroundColor="#f7f7f7" WidthRequest="350">
         <VerticalStackLayout Spacing="25">

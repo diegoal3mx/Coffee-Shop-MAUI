@@ -5,8 +5,8 @@
              xmlns:local="clr-namespace:TDMPW_412_2P_EX"
              Title="inicio">
 
-    <local:home Title="Inicio" IconImageSource="hobbies.png"></local:home>
-    <local:ordena Title="Ordena" IconImageSource="hobbylogo.png" ></local:ordena>
-    <local:Orden Title="Orden" IconImageSource="hobbylogo.png" ></local:Orden>
+    <local:home Title="Inicio" IconImageSource="frappu.png"></local:home>
+    <local:ordena Title="Ordena" IconImageSource="chocolate.png" ></local:ordena>
+    <local:Orden Title="Orden" IconImageSource="mocha.png" ></local:Orden>
 
 </TabbedPage>

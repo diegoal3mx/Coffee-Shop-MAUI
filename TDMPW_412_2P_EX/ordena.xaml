@@ -4,21 +4,28 @@
              x:Class="TDMPW_412_2P_EX.ordena"
                xmlns:local="clr-namespace:TDMPW_412_2P_EX"
              Title="ordena">
-    <VerticalStackLayout HorizontalOptions="Center">
+    <VerticalStackLayout HorizontalOptions="Center" Margin="-10,0,0,0">
+        <Label Text="&lt; "></Label>
         <VerticalStackLayout Spacing="25">
             <Label 
-            Text="Ordena" FontSize="20" FontAttributes="Bold" Margin="0,30,0,0"
+            Text="Ordena" FontSize="18" FontAttributes="Bold" Margin="0,30,0,0" FontFamily="Starbucks"
            />
             <VerticalStackLayout Spacing="5">
-                <Label Text="Menú" FontAttributes="Bold"></Label>
-        <BoxView Color="DarkGreen"
+                <Label Text="Menú" FontAttributes="Bold" FontFamily="Starbucks"></Label>
+                    <BoxView Color="#319e75"
                              HeightRequest="5"
-                             WidthRequest="60" Margin="-165,0,0,0"></BoxView>
-                <Label Text="Bebidas" FontAttributes="Bold" FontSize="25"></Label>
+                             WidthRequest="60" Margin="-245,0,0,0"></BoxView>
+                <Image WidthRequest="285" Source="deg.png" Margin="0,0,0,0"/>
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Bebidas" FontAttributes="Bold" FontSize="23" FontFamily="Starbucks"></Label>
+                    <VerticalStackLayout Margin="50,0,0,0" HorizontalOptions="End">
+                        <Label Text="Ver todo 4" TextDecorations="Underline" TextColor="#4ca084" Margin="50,0,0,0"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
         </VerticalStackLayout>
             </VerticalStackLayout>
 
-            <VerticalStackLayout Spacing="15">
+            <VerticalStackLayout Spacing="15" Margin="0,20,0,0">
 
             <HorizontalStackLayout Spacing="15">
                 <Border WidthRequest="60" HeightRequest="60" >
@@ -26,7 +33,7 @@
                         <RoundRectangle CornerRadius="30" />
                     </Border.StrokeShape>
 
-                    <Image Source="bebidacaliente.jpg" Aspect="Fill"></Image>
+                    <Image Source="mocha.png" Aspect="Fill"></Image>
                 </Border>
                 <Label Text="Bebidas Calientes" VerticalOptions="Center" FontAttributes="Bold"></Label>
         </HorizontalStackLayout>
@@ -37,7 +44,7 @@
                         <RoundRectangle CornerRadius="30" />
                     </Border.StrokeShape>
 
-                    <Image Source="bebidafria.jpg" Aspect="Fill" ></Image>
+                    <Image Source="mangodragon.jpg" Aspect="Fill" ></Image>
                 </Border>
                 <Label Text="Bebidas Frías"  VerticalOptions="Center" FontAttributes="Bold"></Label>
         </HorizontalStackLayout>
@@ -48,7 +55,7 @@
                         <RoundRectangle CornerRadius="30" />
                     </Border.StrokeShape>
 
-                    <Image Source="bebidate.jpeg" Aspect="Fill"></Image>
+                    <Image Source="basete.jpg" Aspect="Fill"></Image>
                 </Border>
                 <Label Text="Bebidas Base Té"  VerticalOptions="Center" FontAttributes="Bold"/>
         </HorizontalStackLayout>
@@ -59,7 +66,7 @@
                         <RoundRectangle CornerRadius="30" />
                     </Border.StrokeShape>
 
-                    <Image Source="frappuccino.jpg" Aspect="Fill"></Image>
+                    <Image Source="frapu.png" Aspect="Fill"></Image>
                 </Border>
                 <Label Text="Frappuccinos"  VerticalOptions="Center" FontAttributes="Bold"/>
             </HorizontalStackLayout>

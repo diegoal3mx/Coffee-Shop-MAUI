@@ -10,7 +10,7 @@ public partial class Orden : ContentPage
         precio = 102.15,
         calorias = 193,
         tamaño = "Mediano",
-        imagen="bebidacaliente.jpg",
+        imagen="chocolate.png",
         tipo="Chocolate",
         nombre="Chocolate caliente"
 
@@ -21,7 +21,7 @@ public partial class Orden : ContentPage
         precio= 86.89,
         calorias = 392,
         tamaño= "Chico",
-        imagen= "cheesecake.jpg",
+        imagen= "cheesecakeroulet.png",
         tipo="Cheesecake",
         nombre= "Cheesecake Roulet"
     };
@@ -60,7 +60,8 @@ public partial class Orden : ContentPage
         getSelectedProduct();
         var precio = productoSeleccionado.precio;
         lblPrecio.Text = $"{cantidad} x ${precio:F2}";
-        lblTotal.Text = $"Total____________________${calculateTotal(cantidad,precio):F2}";
+        lblRevisarCantidad.Text = $" <      Revisar pedido ({cantidad})";
+        lblTotal.Text = $"Total................................${calculateTotal(cantidad,precio):F2}";
     }
     private void Producto1_Tapped(object sender, EventArgs e)
     {
@@ -105,7 +106,7 @@ public partial class Orden : ContentPage
         imgProductoSeleccionado.Source = nuevoProductoSeleccionado.imagen; 
         stpCantidad.Value = 1;
         lblPrecio.Text = $"1 x ${nuevoProductoSeleccionado.precio:F2}";
-        lblTotal.Text = $"Total____________________${nuevoProductoSeleccionado.precio:F2}";
+        lblTotal.Text = $"Total................................${nuevoProductoSeleccionado.precio:F2}";
         ProductoSeleccionado.Tipo= nuevoProductoSeleccionado.tipo;
 
 
